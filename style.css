@@ -4,10 +4,11 @@ body{
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: rgb(55, 85, 68);
-    color: blanchedalmond;
+    background-color: #0a192f;
+    color:white;
 
 }
+
 header {
   background-color: #222;
   color: #fff;
@@ -18,7 +19,7 @@ section{
     padding: 1.5rem;
     margin: 1rem auto;
     max-width: 800px;
-    background: #0d1a0d;
+    background-color: #112240;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
