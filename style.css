@@ -1,5 +1,5 @@
-
 body{
+    background-image: url('images/layered-waves-haikei.png');
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -10,6 +10,7 @@ body{
 }
 
 header {
+  background-image: url('images/layered-waves-haikei.png');
   background-color: #222;
   color: #fff;
   padding: 2rem 1rem;
