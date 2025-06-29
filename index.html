@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elijah Kamanga | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Elijah</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Elijah Kamanga</h1>
-        <p>Software Engineer | Front End Developer | Back End Developer (in training)</p>
-    </header>
 
-    <section id="about">
-        <h2>About Kamanga</h2>
-         <p>I'm currently studying Full-Stack Web Development at Moringa School. I also have a degree in Business and Information Technology from Africa Nazarene University and a background in banking operations at Family Bank Limited. My focus is on building clean, responsive user interfaces with HTML, CSS, and JavaScript.</p>
-    </section>
+  <!-- Hero / Intro -->
+  <header class="hero">
+    <div class="container">
+      <img src="images/elijah.png   " alt="Profile photo" class="profile-pic" />
+      <h1>Hi, I'm Elijah 👋</h1>
+      <p class="tagline">
+        I'm a curious software engineer who loves turning ideas into elegant code &#x1F4DA.
+      </p>
+    </div>
+  </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Portfolio Website <a href="index.html" target="_blank">(This Site)</a></li>
-            <li>WNroots (Fashion | Lifestyle)</li>
-        </ul>
-    </section>
+  <!-- About Section -->
+  <main class="about-section container">
+    <h2>About Me</h2>
+    <p>
+      I genuinely enjoy web development and have a strong interest in creating intuitive, accessible user interfaces. 
+      I’m currently studying full-stack web development and growing my skills every day.
+    </p>
+    <p>
+      Outside of coding, I enjoy love watching documentaries and learning about history — it helps me understand how the world &#x1F30D works and keeps me inspired.
+    <p>My goal is to build tools that feel good to use — not just work well.</p>
+    </p>
+    <p>Let's connect and build something awesome🙂.</p>
+  </main>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
-            <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
-            <li><a href="https://www.w3schools.com/js/" target="_blank">JAVASCRIPT</a></li>
-            <li><a href="https://www.w3schools.com/git/default.asp" target="_blank">Git</a> &
-                <a href="https://github.com/muhorocode" target="_blank">Github </a></li>
-        </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="about-section container">
+    <h2>Projects</h2>
+    <ul>
+      <li>Portfolio Website<a href="index.html">(This Site)</a></li>
+      <li>WNroots</li>
+      <li><a href='https://github.com/muhorocode' target="_blank">Others</a></li>
+    </ul>
+  </section>
 
-    <section id="resume">
-        <h2>My Resume</h2>
+  <!-- Skills Section -->
+  <section id="skills" class="about-section container">
+    <h2>Skills</h2>
+    <ul>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+      <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+      <li><a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
+      <li>
+        <a href="https://www.w3schools.com/git/default.asp" target="_blank">Git</a> &
+        <a href="https://github.com/muhorocode" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </section>
 
-        <p><a href="Elijah-Kamanga-Tech-CV.pdf" target="_blank">Download My Resume (pdf)</a></p>
-</section>
-<section id="contact">
+  <!-- Resume Section -->
+  <section id="resume" class="about-section container">
+    <h2>My Resume</h2>
+    <p>
+      <a href="Elijah-Kamanga-Tech-CV.pdf" target="_blank">Download My Resume (PDF)</a>
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="about-section container">
     <h2>Contact</h2>
-    
+    <p>
+      GitHub:
+      <a href="https://github.com/muhorocode" target="_blank">github.com/muhorocode</a>
+    </p>
+  </section>
 
-    <p>Github: <a href="https://github.com/muhorocode" target="_blank">github.com/muhorocode</a></p>
+  <!-- Toggle Dark Mode -->
+  <div class="container">
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
 
-</section>
-<script src="script.js"></script>
-<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <script src="script.js"></script>
 </body>
 </html>

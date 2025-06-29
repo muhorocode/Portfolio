@@ -1,92 +1,113 @@
-body{
-    background-image: url('images/layered-waves-haikei.png');
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #0a192f;
-    color:white;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
+body {
   background-image: url('images/layered-waves-haikei.png');
-  background-color: #222;
-  color: #fff;
-  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  line-height: 1.7;
+  padding-bottom: 60px;
+}
+
+/* === Container === */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   text-align: center;
-}
-section{
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: #112240;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 4rem 2rem;
+  color: #ffffff;
 }
 
-h2{
-    color: #145722;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.5rem;
-
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #64ffda;
+  margin-bottom: 1rem;
+  object-fit: cover;
 }
 
-a{
-  color: #007acc;
-  text-decoration: none;  
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-
-a:hover{
-    text-decoration: underline;
+.tagline {
+  font-size: 1.2rem;
+  color: #a8b2d1;
 }
 
+/* === Section Styling === */
+.about-section {
+  background-color: #112240;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #64ffda;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.about-section ul {
+  margin-bottom: 1rem;
+}
+
+.about-section ul {
+  padding-left: 1.2rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Links === */
+a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Button === */
+button {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* === Dark Mode Support (Optional) === */
 .dark-mode {
   background-color: #1e1e1e;
   color: #f4f4f4;
 }
 
-.dark-mode section {
+.dark-mode .about-section {
   background-color: #333;
   color: #f4f4f4;
-}
-
-button {
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #007acc;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* style.css */
-
-form label {
-  font-weight: bold;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-form button {
-  background-color: #0077cc;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #005fa3;
 }
