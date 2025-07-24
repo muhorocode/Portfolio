@@ -17,6 +17,10 @@
   background-image: url('images/github.png');
 }
 
+.project-image-4 {
+  background-image: url(images/WN.png);
+}
+
 .profile-pic {
   width: 150px;
   height: 150px;
