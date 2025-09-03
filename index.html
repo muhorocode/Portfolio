@@ -1,123 +1,144 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Elijah Kamanga | Front End Engineer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-
-    <!-- Hero / Intro -->
-    <header class="navbar">
-      <div class="container">
-      <img src="images/elijah.png   " alt="Profile photo" class="profile-pic" />
-      <h1 class="site-title">Elijah Kamanga</h1>
-      <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="theme-toggle">🌙</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elijah Kamanga | Front End Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#0a192f" />
+  <meta name="description" content="Elijah Kamanga – Front End Engineer. Portfolio, projects and experience." />
+</head>
+<body>
+  <div class="layout">
+    <!-- Left rail / Intro -->
+    <aside class="sidebar no-photo">
+      <div class="sidebar-top">
+        <div class="sidebar-header-row">
+          <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="theme-toggle" title="Toggle theme">🌙</button>
+        </div>
+        <h1 class="name">Elijah Kamanga</h1>
+        <p class="role">Front End Engineer</p>
+        <p class="blurb">I build accessible, pixel‑perfect digital experiences for the web.</p>
+        <nav class="local-nav" aria-label="Section navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
       </div>
-    </header>
+      <div class="sidebar-bottom">
+        <div class="socials">
+          <a href="https://github.com/muhorocode" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/elijahkamanga/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </aside>
 
-    <!-- About Section -->
-  <section class="Hero">
-    <div class="container">
-      <p class="Intro">Hi, my name is</p>
-      <h1>Elijah Kamanga</h1>
-      <p class="tagline">
-        I build clean, accessible websites and enjoy turning ideas into reality.
-      </p>
-      <a href="#projects" class="cta-button">See My Work</a>
-    </div>
-    </section>
-
-    <section id="about" class="section container fade-in">
-    <h2>About Me</h2>
-    <p>I'm passionate about web development and building intuitive, accessible user interfaces. I'm currently pursuing full-stack development at Moringa School.</p>
-    <p>Outside of coding, I enjoy documentaries and history as ways to explore the world 🌍.</p>
-  </section>
-
-  <!-- skills -->
-     <section id="skills" class="section container fade-in">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-      <li>JavaScript (ES6+), HTML5, CSS3</li>
-      <li>Git & GitHub, VS Code, Chrome DevTools</li>
-      <li>DOM Manipulation, Event Handling</li>
-      <li>Python 3</li>
-      </ul>
-     </section>
-
-     <!-- Frameworks -->
-      <section id="Frameworks" class="section container fade-in">
-      <h2>Frameworks & Libararies</h2>
-      <ul class="skills-list">
-      <li>React.js</li>
-      <li>Bootstrap</li>
-      <li>Tailwind CSS</li>
-      <li>Node.js</li>
-      </ul>
+    <!-- Right column / Content -->
+    <main class="content">
+      <section id="about" class="section fade-in">
+        <h2>About</h2>
+        <p>I'm passionate about web development and building intuitive, accessible user interfaces. I'm currently pursuing full‑stack development at Moringa School.</p>
+        <p>Outside of coding, I enjoy documentaries and history as ways to explore the world 🌍.</p>
+        <p>
+          <a href="#projects" class="cta-button">See My Work</a>
+          <a href="elijah kamanga.pdf" target="_blank" class="cta-button alt">Download Resume</a>
+        </p>
       </section>
-     <!-- Projects Section -->
-     <section id="Projects" class="section container fade-in">
-     <h2>Some Projects I've worked on</h2>
-     <div class="project-row fade-in">
-    <div class="project-image project-image-1"></div>
-     <div class="project-info">
-      <p class="project-label">Featured Project</p>
-     <h3>Portfolio Website</h3>
-      <p>A clean, responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
-      <div class="project-links">
-      <a href="index.html" target="_blank">View</a>
-     </div>
-     </div>
-     </div>
-     <div class="project-row reverse fade-in">
-     <div class="project-image project-image-2"></div>
-     <div class="project-info">
-      <p class="project-label">Featured Project</p>
-     <h3>MindMix</h3>
-      <p>A simple blog platform focused on idea sharing and simplicity.</p>
-      <div class="project-links">
-     <a href="https://muhorocode.github.io/MindMix/" target="_blank">View</a>
-     </div>
-     </div>
-     </div>
-     <div class="project-row reverse fade-in">
-     <div class="project-image project-image-4"></div>
-     <div class="project-info">
-     <p class="project-label">Featured Project</p>
-     <h3>W&N ROOTS</h3>
-     <p>An E-commerce Website</p>
-     <div class="project-links"></div>
-     <a href="https://muhorocode.github.io/WNRoots/" target="_blank">View</a>
-     </div>
 
-     </div>
-     <div class="project-row fade-in">
-      <div class="project-image project-image-3"></div>
-      <div class="project-info">
-      <p class="project-label">Featured Project</p>
-      <h3>Other Projects</h3>
-      <p>Explore more of my work on GitHub, including practice projects and small builds.</p>
-      <div class="project-links">
-      <a href="https://github.com/muhorocode" target="_blank">GitHub</a>
-     </div>
-    </div>
-    </div>
-    </section>
-     <!-- Resume Section -->
-    <section id="resume" class="section container fade-in">
-      <h2>My Resume</h2>
-      <a href="elijah kamanga.pdf" target="_blank" class="cta-button">Download Resume (PDF)</a>
-    </section>
+      <section id="experience" class="section fade-in">
+        <h2>Experience</h2>
+        <div class="xp-grid">
+          <article class="xp-card">
+            <h3>Core Skills</h3>
+            <ul class="skills-list">
+              <li>JavaScript (ES6+), HTML5, CSS3</li>
+              <li>Git & GitHub, VS Code, Chrome DevTools</li>
+              <li>DOM Manipulation, Event Handling</li>
+              <li>Python 3</li>
+            </ul>
+          </article>
+          <article class="xp-card">
+            <h3>Frameworks & Libraries</h3>
+            <ul class="skills-list">
+              <li>React.js</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section container fade-in">
-      <h2>Contact</h2>
-      <p>Let's connect! I'm open to collaboration and learning opportunities.</p>
+      <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+
+        <div class="project-row">
+          <div class="project-image project-image-1"></div>
+          <div class="project-info">
+            <p class="project-label">Featured Project</p>
+            <h3>Portfolio Website</h3>
+            <p>A clean, responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+            <div class="project-links">
+              <a href="index.html" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row reverse">
+          <div class="project-image project-image-2"></div>
+          <div class="project-info">
+            <p class="project-label">Featured Project</p>
+            <h3>MindMix</h3>
+            <p>A simple blog platform focused on idea sharing and simplicity.</p>
+            <div class="project-links">
+              <a href="https://muhorocode.github.io/MindMix/" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-image project-image-4"></div>
+          <div class="project-info">
+            <p class="project-label">Featured Project</p>
+            <h3>W&N ROOTS</h3>
+            <p>An E‑commerce Website</p>
+            <div class="project-links">
+              <a href="https://muhorocode.github.io/WNRoots/" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-image project-image-3"></div>
+          <div class="project-info">
+            <p class="project-label">Featured Project</p>
+            <h3>Other Projects</h3>
+            <p>Explore more of my work on GitHub, including practice projects and small builds.</p>
+            <div class="project-links">
+              <a href="https://github.com/muhorocode" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section fade-in">
+        <h2>Contact</h2>
+        <p>Let's connect! I'm open to collaboration and learning opportunities.</p>
         <a href="https://github.com/muhorocode" target="_blank" class="cta-button">Visit My GitHub</a>
-        </section>
-    <script src="script.js"></script>
-  </body>
-  </html>
+      </section>
+
+      <footer class="footer-note">
+        <p>Loosely designed in Figma and coded in VS Code by yours truly. Built with vanilla HTML/CSS/JS and deployed anywhere. All text is set in the Inter typeface.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
